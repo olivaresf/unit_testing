@@ -15,7 +15,18 @@
 		9B2AC90B2589C1AD00899B0F /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AC90A2589C1AD00899B0F /* NetworkController.swift */; };
 		9B2AC9122589C51000899B0F /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AC9112589C51000899B0F /* Planet.swift */; };
 		9B2AC9152589D84D00899B0F /* PlanetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AC9142589D84D00899B0F /* PlanetsTableViewController.swift */; };
+		9B56406225CCE4FC007E7EA4 /* UnderdogDevsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B56406125CCE4FC007E7EA4 /* UnderdogDevsTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B56406425CCE4FC007E7EA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B2AC8E92589C06000899B0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B2AC8F02589C06000899B0F;
+			remoteInfo = UnderdogDevs;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9B2AC8F12589C06000899B0F /* UnderdogDevs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnderdogDevs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +39,20 @@
 		9B2AC90A2589C1AD00899B0F /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		9B2AC9112589C51000899B0F /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		9B2AC9142589D84D00899B0F /* PlanetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsTableViewController.swift; sourceTree = "<group>"; };
+		9B56405F25CCE4FC007E7EA4 /* UnderdogDevsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnderdogDevsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B56406125CCE4FC007E7EA4 /* UnderdogDevsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderdogDevsTests.swift; sourceTree = "<group>"; };
+		9B56406325CCE4FC007E7EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9B2AC8EE2589C06000899B0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B56405C25CCE4FC007E7EA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				9B2AC8F32589C06000899B0F /* UnderdogDevs */,
+				9B56406025CCE4FC007E7EA4 /* UnderdogDevsTests */,
 				9B2AC8F22589C06000899B0F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				9B2AC8F12589C06000899B0F /* UnderdogDevs.app */,
+				9B56405F25CCE4FC007E7EA4 /* UnderdogDevsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +94,15 @@
 				9B2AC9142589D84D00899B0F /* PlanetsTableViewController.swift */,
 			);
 			path = UnderdogDevs;
+			sourceTree = "<group>";
+		};
+		9B56406025CCE4FC007E7EA4 /* UnderdogDevsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B56406125CCE4FC007E7EA4 /* UnderdogDevsTests.swift */,
+				9B56406325CCE4FC007E7EA4 /* Info.plist */,
+			);
+			path = UnderdogDevsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +125,24 @@
 			productReference = 9B2AC8F12589C06000899B0F /* UnderdogDevs.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9B56405E25CCE4FC007E7EA4 /* UnderdogDevsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B56406825CCE4FC007E7EA4 /* Build configuration list for PBXNativeTarget "UnderdogDevsTests" */;
+			buildPhases = (
+				9B56405B25CCE4FC007E7EA4 /* Sources */,
+				9B56405C25CCE4FC007E7EA4 /* Frameworks */,
+				9B56405D25CCE4FC007E7EA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B56406525CCE4FC007E7EA4 /* PBXTargetDependency */,
+			);
+			name = UnderdogDevsTests;
+			productName = UnderdogDevsTests;
+			productReference = 9B56405F25CCE4FC007E7EA4 /* UnderdogDevsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -104,6 +154,10 @@
 				TargetAttributes = {
 					9B2AC8F02589C06000899B0F = {
 						CreatedOnToolsVersion = 12.0;
+					};
+					9B56405E25CCE4FC007E7EA4 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 9B2AC8F02589C06000899B0F;
 					};
 				};
 			};
@@ -121,6 +175,7 @@
 			projectRoot = "";
 			targets = (
 				9B2AC8F02589C06000899B0F /* UnderdogDevs */,
+				9B56405E25CCE4FC007E7EA4 /* UnderdogDevsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +188,13 @@
 				9B2AC9012589C06100899B0F /* LaunchScreen.storyboard in Resources */,
 				9B2AC8FE2589C06100899B0F /* Assets.xcassets in Resources */,
 				9B2AC8FC2589C06000899B0F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B56405D25CCE4FC007E7EA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +213,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9B56405B25CCE4FC007E7EA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B56406225CCE4FC007E7EA4 /* UnderdogDevsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B56406525CCE4FC007E7EA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B2AC8F02589C06000899B0F /* UnderdogDevs */;
+			targetProxy = 9B56406425CCE4FC007E7EA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9B2AC8FA2589C06000899B0F /* Main.storyboard */ = {
@@ -327,6 +405,46 @@
 			};
 			name = Release;
 		};
+		9B56406625CCE4FC007E7EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3Y5455NHP;
+				INFOPLIST_FILE = UnderdogDevsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = humans.mx.UnderdogDevsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnderdogDevs.app/UnderdogDevs";
+			};
+			name = Debug;
+		};
+		9B56406725CCE4FC007E7EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3Y5455NHP;
+				INFOPLIST_FILE = UnderdogDevsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = humans.mx.UnderdogDevsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnderdogDevs.app/UnderdogDevs";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -344,6 +462,15 @@
 			buildConfigurations = (
 				9B2AC9062589C06100899B0F /* Debug */,
 				9B2AC9072589C06100899B0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B56406825CCE4FC007E7EA4 /* Build configuration list for PBXNativeTarget "UnderdogDevsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B56406625CCE4FC007E7EA4 /* Debug */,
+				9B56406725CCE4FC007E7EA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

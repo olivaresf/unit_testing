@@ -26,7 +26,8 @@ class NetworkController {
         
         let url = URL(string: baseURL + "/planets")!
         let request = URLRequest(url: url)
-        let newTask = URLSession.shared.dataTask(with: request) { (possibleData, possibleResponse, possibleError) in
+        let newTask = URLSession.shared.dataTask(with: request)
+        { (possibleData, possibleResponse, possibleError) in
             
             guard possibleError == nil else {
                 completion(.failure(.network(possibleError!)))
@@ -38,6 +39,7 @@ class NetworkController {
                 return
             }
             
+            // HTTP Codes
             guard (200...299).contains(response.statusCode) else {
                 completion(.failure(.unexpectedResponse(response.statusCode)))
                 return

@@ -18,6 +18,7 @@ class PlanetsTableViewController : UITableViewController {
         networkController.fetchPlanets { result in
             
             switch result {
+            
             case .failure:
                 DispatchQueue.main.async {
                     let alertController = UIAlertController(title: NSLocalizedString("Impossible...", comment: ""),
