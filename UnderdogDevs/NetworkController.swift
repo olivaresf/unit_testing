@@ -39,7 +39,6 @@ class NetworkController {
                 return
             }
             
-            // HTTP Codes
             guard (200...299).contains(response.statusCode) else {
                 completion(.failure(.unexpectedResponse(response.statusCode)))
                 return
