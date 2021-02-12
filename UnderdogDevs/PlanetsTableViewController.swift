@@ -15,7 +15,10 @@ class PlanetsTableViewController : UITableViewController {
         super.viewDidLoad()
         
         let networkController = NetworkController()
-        networkController.fetchPlanets { result in
+        
+        // In the app bundle, we want to go out to the network.
+        let networkSession = NetworkSession(baseURL: "https://swapi.dev/api")
+        networkController.fetchPlanets(using: networkSession) { result in
             
             switch result {
             

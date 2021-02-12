@@ -1,62 +1,22 @@
 //
-//  NetworkController.swift
+//  NetworkSession.swift
 //  UnderdogDevs
 //
-//  Created by Fernando Olivares on 12/15/20.
+//  Created by Fernando Olivares on 2/11/21.
 //
 
 import Foundation
 
-protocol Fetcher {
-    func fetch(request: NetworkController.Request, completion: @escaping (Result<Data, Error>) -> Void)
-}
-
-
-class NetworkController {
-    
+class NetworkSession {
     let baseURL: String
-    init(baseURL: String = "https://swapi.dev/api") {
+    init(baseURL: String) {
         self.baseURL = baseURL
     }
-    
-    enum FetchError : Error {
-        case network(Error)
-        case missingResponse
-        case unexpectedResponse(Int)
-        case invalidData
-        case invalidJSON(Error)
-    }
-    
-    enum Request {
-        case planets
-    }
-    
-    func fetchPlanets(using fetcher: Fetcher, completion: @escaping (Result<[Planet], FetchError>) -> Void) {
-        
-        // Requesting from Network
-        fetcher.fetch(request: .planets) { (result: Result<Data, Error>) in
-        
-            switch result {
-            case .success(let data):
-                do {
-                    let decoder = JSONDecoder()
-                    let planetsResult = try decoder.decode(PlanetResult.self, from: data)
-                    completion(.success(planetsResult.results))
-                } catch {
-                    completion(.failure(.invalidJSON(error)))
-                }
-                
-            case .failure(let error):
-                //completion(.failure(error))
-            break
-            }
-        }
-    }
 }
 
-extension URLSession : Fetcher {
-    func fetch(request: NetworkController.Request,
-               completion: @escaping (Result<Data, Error>) -> Void) {
+extension NetworkSession : Fetcher {
+    
+    func fetch(request: NetworkController.Request, completion: @escaping (Result<Data, Error>) -> Void) {
         
         let url = URL(string: baseURL + "/planets")!
         let request = URLRequest(url: url)
@@ -96,6 +56,4 @@ extension URLSession : Fetcher {
         
         newTask.resume()
     }
-    
-    
 }
