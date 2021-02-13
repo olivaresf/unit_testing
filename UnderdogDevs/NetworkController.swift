@@ -7,6 +7,10 @@
 
 import Foundation
 
+protocol FetcherProtocol {
+    func fetch(request: NetworkController.Request, completion: @escaping (Result<Data, Error>) -> Void)
+}
+
 class NetworkController {
     
     let baseURL: String
@@ -15,49 +19,33 @@ class NetworkController {
     }
     
     enum FetchError : Error {
-        case network(Error)
-        case missingResponse
-        case unexpectedResponse(Int)
-        case invalidData
+        case fetcherError(Error)
         case invalidJSON(Error)
     }
     
-    func fetchPlanets(completion: @escaping (Result<[Planet], FetchError>) -> Void) {
+    enum Request {
+        case planets
+    }
+    
+    func fetchPlanets(someFetcher: FetcherProtocol = NetworkSession(baseURL: "https://swapi.dev/api"),
+                      completion: @escaping (Result<[Planet], FetchError>) -> Void) {
         
-        let url = URL(string: baseURL + "/planets")!
-        let request = URLRequest(url: url)
-        let newTask = URLSession.shared.dataTask(with: request)
-        { (possibleData, possibleResponse, possibleError) in
+        someFetcher.fetch(request: .planets) { result in
             
-            guard possibleError == nil else {
-                completion(.failure(.network(possibleError!)))
-                return
+            switch result {
+            case .success(let data):
+                do {
+                    let decoder = JSONDecoder()
+                    let planetsResult = try decoder.decode(PlanetResult.self, from: data)
+                    completion(.success(planetsResult.results))
+                } catch {
+                    completion(.failure(.invalidJSON(error)))
+                }
+                
+            case .failure(let error):
+                completion(.failure(.fetcherError(error)))
             }
             
-            guard let response = possibleResponse as? HTTPURLResponse else {
-                completion(.failure(.missingResponse))
-                return
-            }
-            
-            guard (200...299).contains(response.statusCode) else {
-                completion(.failure(.unexpectedResponse(response.statusCode)))
-                return
-            }
-            
-            guard let receivedData = possibleData else {
-                completion(.failure(.invalidData))
-                return
-            }
-            
-            do {
-                let decoder = JSONDecoder()
-                let planetsResult = try decoder.decode(PlanetResult.self, from: receivedData)
-                completion(.success(planetsResult.results))
-            } catch {
-                completion(.failure(.invalidJSON(error)))
-            }
         }
-        
-        newTask.resume()
     }
 }

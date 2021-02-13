@@ -16,6 +16,8 @@
 		9B2AC9122589C51000899B0F /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AC9112589C51000899B0F /* Planet.swift */; };
 		9B2AC9152589D84D00899B0F /* PlanetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AC9142589D84D00899B0F /* PlanetsTableViewController.swift */; };
 		9B56406225CCE4FC007E7EA4 /* UnderdogDevsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B56406125CCE4FC007E7EA4 /* UnderdogDevsTests.swift */; };
+		9B76435A25D8556700286338 /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B76435925D8556700286338 /* NetworkSession.swift */; };
+		9B76435E25D857D600286338 /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B76435D25D857D600286338 /* MockSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		9B56405F25CCE4FC007E7EA4 /* UnderdogDevsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnderdogDevsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B56406125CCE4FC007E7EA4 /* UnderdogDevsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderdogDevsTests.swift; sourceTree = "<group>"; };
 		9B56406325CCE4FC007E7EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B76435925D8556700286338 /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
+		9B76435D25D857D600286338 /* MockSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 				9B2AC8FF2589C06100899B0F /* LaunchScreen.storyboard */,
 				9B2AC9022589C06100899B0F /* Info.plist */,
 				9B2AC90A2589C1AD00899B0F /* NetworkController.swift */,
+				9B76435925D8556700286338 /* NetworkSession.swift */,
 				9B2AC9112589C51000899B0F /* Planet.swift */,
 				9B2AC9142589D84D00899B0F /* PlanetsTableViewController.swift */,
 			);
@@ -101,6 +106,7 @@
 			children = (
 				9B56406125CCE4FC007E7EA4 /* UnderdogDevsTests.swift */,
 				9B56406325CCE4FC007E7EA4 /* Info.plist */,
+				9B76435D25D857D600286338 /* MockSession.swift */,
 			);
 			path = UnderdogDevsTests;
 			sourceTree = "<group>";
@@ -208,6 +214,7 @@
 				9B2AC8F52589C06000899B0F /* AppDelegate.swift in Sources */,
 				9B2AC8F72589C06000899B0F /* SceneDelegate.swift in Sources */,
 				9B2AC90B2589C1AD00899B0F /* NetworkController.swift in Sources */,
+				9B76435A25D8556700286338 /* NetworkSession.swift in Sources */,
 				9B2AC9122589C51000899B0F /* Planet.swift in Sources */,
 				9B2AC9152589D84D00899B0F /* PlanetsTableViewController.swift in Sources */,
 			);
@@ -217,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B76435E25D857D600286338 /* MockSession.swift in Sources */,
 				9B56406225CCE4FC007E7EA4 /* UnderdogDevsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
