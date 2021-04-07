@@ -38,6 +38,9 @@ class NetworkController {
                 return
             }
             
+            // HTTP Code?
+            // Response code with meaning
+            // 200 -> OK
             guard (200...299).contains(response.statusCode) else {
                 completion(.failure(.unexpectedResponse(response.statusCode)))
                 return

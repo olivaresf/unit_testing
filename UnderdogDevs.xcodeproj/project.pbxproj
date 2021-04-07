@@ -15,7 +15,24 @@
 		9B2AC90B2589C1AD00899B0F /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AC90A2589C1AD00899B0F /* NetworkController.swift */; };
 		9B2AC9122589C51000899B0F /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AC9112589C51000899B0F /* Planet.swift */; };
 		9B2AC9152589D84D00899B0F /* PlanetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AC9142589D84D00899B0F /* PlanetsTableViewController.swift */; };
+		9B647474261D419A00423FF3 /* UnderdogDevsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B647473261D419A00423FF3 /* UnderdogDevsTests.swift */; };
+		9B6474A5261D4BB200423FF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6474A4261D4BB200423FF3 /* AppDelegate.swift */; };
+		9B6474A7261D4BB200423FF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6474A6261D4BB200423FF3 /* ViewController.swift */; };
+		9B6474A9261D4BB300423FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6474A8261D4BB300423FF3 /* Assets.xcassets */; };
+		9B6474AC261D4BB300423FF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6474AA261D4BB300423FF3 /* Main.storyboard */; };
+		9B6474B5261D4BC100423FF3 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AC90A2589C1AD00899B0F /* NetworkController.swift */; };
+		9B6474B9261D4BD400423FF3 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2AC9112589C51000899B0F /* Planet.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B647476261D419A00423FF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B2AC8E92589C06000899B0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B2AC8F02589C06000899B0F;
+			remoteInfo = UnderdogDevs;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9B2AC8F12589C06000899B0F /* UnderdogDevs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnderdogDevs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +45,34 @@
 		9B2AC90A2589C1AD00899B0F /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		9B2AC9112589C51000899B0F /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		9B2AC9142589D84D00899B0F /* PlanetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsTableViewController.swift; sourceTree = "<group>"; };
+		9B647471261D419A00423FF3 /* UnderdogDevsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnderdogDevsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B647473261D419A00423FF3 /* UnderdogDevsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderdogDevsTests.swift; sourceTree = "<group>"; };
+		9B647475261D419A00423FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B6474A2261D4BB200423FF3 /* UnderdogDevsMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnderdogDevsMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B6474A4261D4BB200423FF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B6474A6261D4BB200423FF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B6474A8261D4BB300423FF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B6474AB261D4BB300423FF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B6474AD261D4BB300423FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B6474AE261D4BB300423FF3 /* UnderdogDevsMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnderdogDevsMac.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9B2AC8EE2589C06000899B0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B64746E261D419A00423FF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B64749F261D4BB200423FF3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				9B2AC8F32589C06000899B0F /* UnderdogDevs */,
+				9B647472261D419A00423FF3 /* UnderdogDevsTests */,
+				9B6474A3261D4BB200423FF3 /* UnderdogDevsMac */,
 				9B2AC8F22589C06000899B0F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				9B2AC8F12589C06000899B0F /* UnderdogDevs.app */,
+				9B647471261D419A00423FF3 /* UnderdogDevsTests.xctest */,
+				9B6474A2261D4BB200423FF3 /* UnderdogDevsMac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +116,28 @@
 				9B2AC9142589D84D00899B0F /* PlanetsTableViewController.swift */,
 			);
 			path = UnderdogDevs;
+			sourceTree = "<group>";
+		};
+		9B647472261D419A00423FF3 /* UnderdogDevsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B647473261D419A00423FF3 /* UnderdogDevsTests.swift */,
+				9B647475261D419A00423FF3 /* Info.plist */,
+			);
+			path = UnderdogDevsTests;
+			sourceTree = "<group>";
+		};
+		9B6474A3261D4BB200423FF3 /* UnderdogDevsMac */ = {
+			isa = PBXGroup;
+			children = (
+				9B6474A4261D4BB200423FF3 /* AppDelegate.swift */,
+				9B6474A6261D4BB200423FF3 /* ViewController.swift */,
+				9B6474A8261D4BB300423FF3 /* Assets.xcassets */,
+				9B6474AA261D4BB300423FF3 /* Main.storyboard */,
+				9B6474AD261D4BB300423FF3 /* Info.plist */,
+				9B6474AE261D4BB300423FF3 /* UnderdogDevsMac.entitlements */,
+			);
+			path = UnderdogDevsMac;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,17 +160,59 @@
 			productReference = 9B2AC8F12589C06000899B0F /* UnderdogDevs.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9B647470261D419A00423FF3 /* UnderdogDevsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B64747A261D419A00423FF3 /* Build configuration list for PBXNativeTarget "UnderdogDevsTests" */;
+			buildPhases = (
+				9B64746D261D419A00423FF3 /* Sources */,
+				9B64746E261D419A00423FF3 /* Frameworks */,
+				9B64746F261D419A00423FF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B647477261D419A00423FF3 /* PBXTargetDependency */,
+			);
+			name = UnderdogDevsTests;
+			productName = UnderdogDevsTests;
+			productReference = 9B647471261D419A00423FF3 /* UnderdogDevsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9B6474A1261D4BB200423FF3 /* UnderdogDevsMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B6474AF261D4BB300423FF3 /* Build configuration list for PBXNativeTarget "UnderdogDevsMac" */;
+			buildPhases = (
+				9B64749E261D4BB200423FF3 /* Sources */,
+				9B64749F261D4BB200423FF3 /* Frameworks */,
+				9B6474A0261D4BB200423FF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnderdogDevsMac;
+			productName = UnderdogDevsMac;
+			productReference = 9B6474A2261D4BB200423FF3 /* UnderdogDevsMac.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		9B2AC8E92589C06000899B0F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					9B2AC8F02589C06000899B0F = {
 						CreatedOnToolsVersion = 12.0;
+					};
+					9B647470261D419A00423FF3 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 9B2AC8F02589C06000899B0F;
+					};
+					9B6474A1261D4BB200423FF3 = {
+						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
@@ -121,6 +230,8 @@
 			projectRoot = "";
 			targets = (
 				9B2AC8F02589C06000899B0F /* UnderdogDevs */,
+				9B647470261D419A00423FF3 /* UnderdogDevsTests */,
+				9B6474A1261D4BB200423FF3 /* UnderdogDevsMac */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +244,22 @@
 				9B2AC9012589C06100899B0F /* LaunchScreen.storyboard in Resources */,
 				9B2AC8FE2589C06100899B0F /* Assets.xcassets in Resources */,
 				9B2AC8FC2589C06000899B0F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B64746F261D419A00423FF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6474A0261D4BB200423FF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6474A9261D4BB300423FF3 /* Assets.xcassets in Resources */,
+				9B6474AC261D4BB300423FF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +278,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9B64746D261D419A00423FF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B647474261D419A00423FF3 /* UnderdogDevsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B64749E261D4BB200423FF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6474A7261D4BB200423FF3 /* ViewController.swift in Sources */,
+				9B6474A5261D4BB200423FF3 /* AppDelegate.swift in Sources */,
+				9B6474B5261D4BC100423FF3 /* NetworkController.swift in Sources */,
+				9B6474B9261D4BD400423FF3 /* Planet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B647477261D419A00423FF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B2AC8F02589C06000899B0F /* UnderdogDevs */;
+			targetProxy = 9B647476261D419A00423FF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9B2AC8FA2589C06000899B0F /* Main.storyboard */ = {
@@ -168,6 +322,14 @@
 				9B2AC9002589C06100899B0F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9B6474AA261D4BB300423FF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B6474AB261D4BB300423FF3 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -327,6 +489,94 @@
 			};
 			name = Release;
 		};
+		9B647478261D419A00423FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Q28B2MC2C;
+				INFOPLIST_FILE = UnderdogDevsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = humans.mx.UnderdogDevsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnderdogDevs.app/UnderdogDevs";
+			};
+			name = Debug;
+		};
+		9B647479261D419A00423FF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Q28B2MC2C;
+				INFOPLIST_FILE = UnderdogDevsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = humans.mx.UnderdogDevsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnderdogDevs.app/UnderdogDevs";
+			};
+			name = Release;
+		};
+		9B6474B0261D4BB300423FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UnderdogDevsMac/UnderdogDevsMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7Q28B2MC2C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = UnderdogDevsMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = humans.mx.UnderdogDevsMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9B6474B1261D4BB300423FF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UnderdogDevsMac/UnderdogDevsMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7Q28B2MC2C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = UnderdogDevsMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = humans.mx.UnderdogDevsMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -344,6 +594,24 @@
 			buildConfigurations = (
 				9B2AC9062589C06100899B0F /* Debug */,
 				9B2AC9072589C06100899B0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B64747A261D419A00423FF3 /* Build configuration list for PBXNativeTarget "UnderdogDevsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B647478261D419A00423FF3 /* Debug */,
+				9B647479261D419A00423FF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B6474AF261D4BB300423FF3 /* Build configuration list for PBXNativeTarget "UnderdogDevsMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B6474B0261D4BB300423FF3 /* Debug */,
+				9B6474B1261D4BB300423FF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
