@@ -15,7 +15,7 @@ class PlanetsTableViewController : UITableViewController {
         super.viewDidLoad()
         
         let networkController = NetworkController()
-        networkController.fetchPlanets { result in
+        networkController.fetchPlanets(anObject: URLSession.shared) { result in
             
             switch result {
             
